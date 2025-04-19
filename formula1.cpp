@@ -1,8 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <fstream>
-#include <unistd.h>
 #include <32blit.hpp>
 #if defined(TARGET_32BLIT_HW) || defined(PICO_BUILD)
 #include <malloc.h>
