@@ -1,0 +1,19 @@
+# All these assets will be created in assets.cpp, which CMake will
+# link automagically.
+# References can be picked up by including assets.hpp
+
+assets.cpp:
+  assets/background.png:
+    name: background
+    packed: true
+  assets/enemy.png:
+    name: enemy
+    packed: true
+  assets/player.png:
+    name: player
+    packed: true
+  assets/font.ttf:
+    name: lcdfont
+    height: 15
+    
+

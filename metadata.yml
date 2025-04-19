@@ -1,0 +1,10 @@
+title: Formula 1
+description: A Fake Game & Watch style game
+author: Willems Davy
+splash:
+  file: assets/image.png
+icon:
+  file: assets/icon.png
+version: v1.0.0
+category: game
+url: https://github.com/joyrider3774/formula1_32blit
