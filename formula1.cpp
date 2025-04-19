@@ -326,6 +326,8 @@ void Intro_update()
 		 for (int X=0;X<3;X++)
 			 PlayerStates[X] = ! PlayerStates[X];	
 	}
+	if(buttons.pressed & Button::DPAD_UP)
+		debugMode = true;
 	if((buttons.pressed & Button::A) || (buttons.pressed & Button::B) || (buttons.pressed & Button::X) || 
 		(buttons.pressed & Button::Y) || (buttons.pressed & Button::DPAD_LEFT) || (buttons.pressed & Button::DPAD_RIGHT))
 	{
