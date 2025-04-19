@@ -17,13 +17,13 @@ uint8_t music_loop;
 
 constexpr uint8_t sfxSustain = 100 * 15 / 18;
 
-constexpr uint8_t timerDuration = 10;
+constexpr uint8_t timerDuration = 16;
 
 const uint16_t freq = 1100;
 const uint16_t freq2 = 1200;
 const uint16_t freq3 = 1400;
 const uint16_t freq4 = 1000;
-const uint16_t pause = 40 / timerDuration;
+const uint16_t pause = 4;
 
 const uint16_t music_gameover[] ={
     freq3, pause,
