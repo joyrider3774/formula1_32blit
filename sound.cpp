@@ -17,11 +17,13 @@ uint8_t music_loop;
 
 constexpr uint8_t sfxSustain = 100 * 15 / 18;
 
+constexpr uint8_t timerDuration = 10;
+
 const uint16_t freq = 1100;
 const uint16_t freq2 = 1200;
 const uint16_t freq3 = 1400;
 const uint16_t freq4 = 1000;
-const uint16_t pause = 11;
+const uint16_t pause = 40 / timerDuration;
 
 const uint16_t music_gameover[] ={
     freq3, pause,
@@ -219,7 +221,7 @@ void initMusic()
 {
     music_on = 0;
     prev_music = 0;
-    timer_music.init(musicTimer, 1, -1);
+    timer_music.init(musicTimer, timerDuration, -1);
     timer_music.start();
 }
 
