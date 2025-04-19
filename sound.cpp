@@ -21,7 +21,7 @@ const uint16_t freq = 1100;
 const uint16_t freq2 = 1200;
 const uint16_t freq3 = 1400;
 const uint16_t freq4 = 1000;
-const uint16_t pause = 16;
+const uint16_t pause = 11;
 
 const uint16_t music_gameover[] ={
     freq3, pause,
@@ -67,10 +67,10 @@ void playMusicTone(uint16_t tone, uint16_t sustain)
     else
     {
         channels[1].waveforms   = Waveform::SQUARE;
-        channels[1].attack_ms   = 5;
+        channels[1].attack_ms   = 1;
         channels[1].decay_ms    = 60*sustain;
-        channels[1].sustain     = 1;
-        channels[1].release_ms  = 1;
+        channels[1].sustain     = 0;
+        channels[1].release_ms  = 0;
         channels[1].volume      = 0xffff;
         channels[1].frequency   = tone;
         channels[1].trigger_attack();
